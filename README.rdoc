@@ -1,0 +1,63 @@
+= Capistrano Configuration
+
+Capistrano Configuration allows you to create configurations on deployment,
+so you don't have to worry about copy different yml files to the right place
+(especially when you have multiple deploy stages in one repository)
+
+
+== Installation
+
+  sudo gem install capistrano-configuration
+
+
+== Usage
+
+Simply add the following to your deploy.rb file:
+
+  require 'capistrano-configuration'
+
+and then write your configurations in ruby like so:
+
+  configure :database do
+    environment 'development' do
+      config 'username', 'app'
+      config 'password', 'secret'
+    end
+    environment 'production' do
+      config 'username', 'app_production'
+      config 'password', 'secret_production'
+    end
+  end
+  
+  configure :google_map_key do
+    config 'map_key', 'u232398b208x9830x30xb383'
+  end
+
+The gem will take care of the rest. It stores your configurations,
+and after the code is updated, it'll write the configurations needed
+for things like migrations.
+
+Note: The method name environment doesn't suit all configurations, so
+that method has an alias called 'context' which you can use to do the
+same thing.
+
+
+== Issues
+
+The gem currently only supports one environment level, that is, code
+like this won't work:
+
+  configure :database do
+    environment :test do
+      environment :remote do
+        config 'username', 'app'
+      end
+    end
+  end
+
+This feature (nested environments) is planned for a future version.
+
+
+== Credits
+
+Gem created and maintained by Kieran Pilkington <kieran@katipo.co.nz>

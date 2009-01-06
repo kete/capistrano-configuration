@@ -1,0 +1,11 @@
+coverage
+.DS_Store
+pkg
+doc
+ri
+email.txt
+log
+.project
+.loadpath
+*.swp
+results
