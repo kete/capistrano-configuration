@@ -7,7 +7,7 @@ so you don't have to worry about copy different yml files to the right place
 
 == Installation
 
-  sudo gem install capistrano-configuration
+  sudo gem install kete-capistrano-configuration
 
 
 == Usage

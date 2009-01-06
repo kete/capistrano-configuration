@@ -1,5 +1,8 @@
+capistrano-configuration.gemspec
 CHANGELOG.rdoc
+install.rb
 lib/capistrano-configuration.rb
 Manifest
 MIT-LICENSE
+Rakefile
 README.rdoc
