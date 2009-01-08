@@ -7,7 +7,7 @@ so you don't have to worry about copy different yml files to the right place
 
 == Installation
 
-  sudo gem install kete-capistrano-configuration
+  sudo gem install kete-capistrano-configuration --source=http://gems.github.com
 
 
 == Usage
@@ -56,6 +56,13 @@ like this won't work:
   end
 
 This feature (nested environments) is planned for a future version.
+
+
+== Bug and Feature Requests
+
+You can report bugs and request features / submit patches at our Lighthouse account
+
+http://kete.lighthouseapp.com/projects/23036-capistrano-configuration
 
 
 == Credits
