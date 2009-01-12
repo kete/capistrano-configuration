@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name              = "capistrano-configuration"
-  s.version           = "0.1.1"
-  s.date              = "2009-01-07"
+  s.version           = "0.1.2"
+  s.date              = "2009-01-12"
   s.author            = "Kieran Pilkington"
   s.email             = "kieran@katipo.co.nz"
   s.homepage          = "http://github.com/kete/capistrano-configuration"

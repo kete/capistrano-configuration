@@ -1,8 +1,13 @@
+== 0.1.2 (January 12, 2009)
+
+* Fixing configuration writing issue
+    - Replacing 'echo >>' syntax with Capistrano's much less buggy 'put' command
+
 == 0.1.1 (January 7, 2009)
 
 * Fixing deployment issues
-   - Configuration write now happens after symlink, not code update (so current directory is present)
-   - YAML files were parsing incorrectly (would leave backslashes at the end of lines breaking format)
+    - Configuration write now happens after symlink, not code update (so current directory is present)
+    - YAML files were parsing incorrectly (would leave backslashes at the end of lines breaking format)
 
 == 0.1.0 (January 6, 2009)
 

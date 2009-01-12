@@ -42,8 +42,7 @@ module CapistranoConfiguration
             abort "@@configurations is empty. Did you forget to define some configurations?" if @@configurations.empty?
             @@configurations.each do |file, value|
               run "cd #{current_path} && rm -rf config/#{file}.yml"
-              yaml = value.to_yaml.gsub("\n", '\n').gsub('"', '\"')
-              run "cd #{current_path} && echo \"#{yaml}\" >> config/#{file}.yml"
+              put value.to_yaml, "#{current_path}/config/#{file}.yml"
             end
           end
 
