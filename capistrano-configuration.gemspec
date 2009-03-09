@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name              = "capistrano-configuration"
-  s.version           = "0.1.2"
-  s.date              = "2009-01-12"
+  s.version           = "0.2.0"
+  s.date              = "2009-03-09"
   s.author            = "Kieran Pilkington"
   s.email             = "kieran@katipo.co.nz"
   s.homepage          = "http://github.com/kete/capistrano-configuration"
@@ -17,13 +17,13 @@ Gem::Specification.new do |s|
                             Manifest
                             MIT-LICENSE
                             Rakefile
-                            README.rdoc }
+                            README.rdoc
+                            test/capistrano_configuration_test.rb }
   s.has_rdoc          = true
   s.extra_rdoc_files  = %w{ CHANGELOG.rdoc
                             MIT-LICENSE
                             README.rdoc }
   s.rdoc_options      = ["--line-numbers",
-                         "--inline-source",
                          "--title",
                          "capistrano-configuration",
                          "--main",

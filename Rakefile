@@ -1,6 +1,10 @@
+require 'rake'
+require 'rake/testtask'
+require 'rake/rdoctask'
+
 namespace :gem do
 
-  task :default => :build
+  task :default => ['gem:build', 'gem:install']
 
   desc 'Build the Capistrano Configuration Gem'
   task :build do
@@ -13,9 +17,25 @@ namespace :gem do
   desc 'Install the Capistrano Configuration Gem'
   task :install do
     gem_filename = Dir['*.gem'].first
-    sh "sudo gem install --local #{gem_filename}"
+    sh "sudo gem install #{gem_filename}"
   end
 
 end
 
-task :default => ['gem:build', 'gem:install']
+task :gem => ['gem:build', 'gem:install']
+
+desc 'Test Capistrano Configuration Gem'
+Rake::TestTask.new(:test) do |t|
+  t.pattern = 'test/**/*_test.rb'
+  t.verbose = true
+end
+
+task :default do
+  puts "----"
+  puts "              rake  -  This menu"
+  puts "         rake test  -  Test the gem"
+  puts "          rake gem  -  Build and install gem"
+  puts "    rake gem:build  -  Build gem"
+  puts "  rake gem:install  -  Install gem"
+  puts "----"
+end

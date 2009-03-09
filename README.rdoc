@@ -42,22 +42,6 @@ that method has an alias called 'context' which you can use to do the
 same thing.
 
 
-== Issues
-
-The gem currently only supports one environment level, that is, code
-like this won't work:
-
-  configure :database do
-    environment :test do
-      environment :remote do
-        config 'username', 'app'
-      end
-    end
-  end
-
-This feature (nested environments) is planned for a future version.
-
-
 == Bug and Feature Requests
 
 You can report bugs and request features / submit patches at our Lighthouse account

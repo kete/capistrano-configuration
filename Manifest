@@ -6,3 +6,4 @@ Manifest
 MIT-LICENSE
 Rakefile
 README.rdoc
+test/capistrano_configuration_test.rb

@@ -1,3 +1,10 @@
+== 0.2.0 (March 9, 2009)
+
+* Multi level configuration is now possible (when previously only one level was working)
+* A to_file option can be passed to configure method to specify the location of the yml file (defaults to config directory)
+* Raises to ensure methods are called in the right order
+* Testing - Covers all the main parts of Capistrano Configuration so hopefully this release is pretty bug free
+
 == 0.1.2 (January 12, 2009)
 
 * Fixing configuration writing issue
