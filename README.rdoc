@@ -7,7 +7,7 @@ so you don't have to worry about copy different yml files to the right place
 
 == Installation
 
-  sudo gem install kete-capistrano-configuration --source=http://gems.github.com
+  sudo gem install capistrano-configuration --source=http://gemcutter.org
 
 
 == Usage
@@ -28,7 +28,7 @@ and then write your configurations in ruby like so:
       config 'password', 'secret_production'
     end
   end
-  
+
   configure :google_map_key do
     config 'map_key', 'u232398b208x9830x30xb383'
   end

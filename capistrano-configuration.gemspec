@@ -2,8 +2,8 @@
 
 Gem::Specification.new do |s|
   s.name              = "capistrano-configuration"
-  s.version           = "0.2.0"
-  s.date              = "2009-03-09"
+  s.version           = "0.2.1"
+  s.date              = "2009-11-18"
   s.author            = "Kieran Pilkington"
   s.email             = "kieran@katipo.co.nz"
   s.homepage          = "http://github.com/kete/capistrano-configuration"
@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
                          "capistrano-configuration",
                          "--main",
                          "README.rdoc"]
-  s.rubygems_version  = "1.1.1"
-  s.add_dependency      "capistrano", ">= 1.1.0"
+  s.rubygems_version  = "1.3.0"
+  s.add_dependency      "capistrano", ">= 2.0.0"
   s.rubyforge_project = "capistrano-conf"
 end

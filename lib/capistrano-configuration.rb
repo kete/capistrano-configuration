@@ -51,7 +51,7 @@ module CapistranoConfiguration
 
       namespace :deploy do
 
-        namespace :configuration do
+        namespace :configurations do
 
           desc 'Write the configuration files based on whats in @@configurations'
           task :write, :role => :app do
@@ -67,7 +67,7 @@ module CapistranoConfiguration
 
       end
 
-      after "deploy:symlink", "deploy:configuration:write"
+      after "deploy:symlink", "deploy:configurations:write"
 
     end
 

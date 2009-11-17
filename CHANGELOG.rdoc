@@ -1,3 +1,7 @@
+== 0.2.1 (Nov 18, 2009)
+
+* Fix namespace conflicts with latest version of Capistrano
+
 == 0.2.0 (March 9, 2009)
 
 * Multi level configuration is now possible (when previously only one level was working)
