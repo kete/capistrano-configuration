@@ -67,7 +67,7 @@ module CapistranoConfiguration
 
       end
 
-      after "deploy:symlink", "deploy:configurations:write"
+      after "deploy:create_symlink", "deploy:configurations:write"
 
     end
 
